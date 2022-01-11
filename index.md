@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Mahavir Patel
 
 You can use the [editor on GitHub](https://github.com/mahavir0/mahavir0.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
