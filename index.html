@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mahavir Patel</title>
+    <link rel="icon" type="image" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1900ms;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay: 1900ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay: 1000ms;">contact</a>
+    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">projects</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
+        <h1>Mahavir Patel</h1>
+        <div class="container1">
+            <p>I am <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+        <!-- <h2>Software Developer</h2> -->
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+            <a onclick="showprojects()">projects</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.linkedin.com/in/mahavirpatel0/"><i class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/MahavirPatel12"><i class="fab fa-twitter"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://instagram.com/mahavir0"><i class="fab fa-instagram"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://github.com/mahavir0"><i class="fab fa-github"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="projects_container" class="container">
+        <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
+        <h1>projects.</h1>
+        <section>
+            <h2>My projects</h2>
+            <ul>
+                <!-- <div class="project_card">
+                    <div class="project_info">
+                        <h3>My Portfolio</h3>
+                        <p style="text-align: justify;">The Open-Source code for the Personal Portfolio this website is coming from! A minimal and ambient portfolio template for Developers! ⚡</p>
+                        <button class="btn_one"><a
+                                href="https://github.com/mahavir0/mahavir0.github.io"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div> -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>FreeLanceIot</h3>
+                        <p style="text-align: justify;">A reactive server-push web application using Play Framework based on Akka, scala and actor framework that examines the content of the Freelance.com website via its REST API.</p>
+                        <button class="btn_one"><a href="https://github.com/mahavir0/SOEN6441-Project"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Endangered Bird Species Detection</h3>
+                        <p style="text-align: justify;">AI model to categorize the endangered bird species using CNN Model and decision tree with supervised and semi-supervised leanring.</p>
+                        <button class="btn_one"><a href="https://github.com/mahavir0/Bird_Classification_AI_Project_COMP_6721"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Distributed Appointment Management System</h3>
+                        <p style="text-align: justify;">A Distributed architecture for a hospital appointment system using the Java IDL - CORBA architecture to handle crash failure, high availability and fault tolerance using socket programmming.</p>
+                        <button class="btn_one"><a href="https://github.com/mahavir0/DSD-Project"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Online Attendance System using Face Recognition</h3>
+                        <p style="text-align: justify;">System that takes attendance of students/employees by using facial recognition method with the help of tensorflow and opencv.</p>
+                        <button class="btn_one"><a href="https://github.com/mahavir0/FACE-RECOGNITION-TENSORFLOW-ATTENDENCE"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>work.</h1>
+        <section>
+            <h2></h2>
+            <p>
+                Welcome! I'm Mahavir Patel. A passionate profesional with the master's degree in Applied Computer Science from Concordia University with a little expirience in IT industary.
+            </p>
+            <div class="project_card">
+                <div class="project_info">
+                    <h4>Systems Engineer, Tata Consultacy Services Limited</h4>
+                    <div id="used">
+                        <div><i class="fas fa-circle"></i>&nbsp;Full Stack development</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;Agile Methodology</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;Node.js</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;React.js</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_card">
+                <div class="project_info">
+                    <h4>Data Science Intern, Tata Consultacy Services Limited</h4>
+                    <div id="used">
+                        <div><i class="fas fa-circle"></i>&nbsp;ELK stack</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;Data Science</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;Elasticsearch</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;LogStash</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;Kibana</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;Data Visualisation</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <p>
+            </p>
+            <!-- <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Web Designing</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Programming</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Problem Solving</div>
+            </div> -->
+            <button class="btn_one"><a href="./assets/Resume.pdf" target="_blank"
+                    style="color: inherit; text-decoration: none">View
+                    Resume</a></button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about.</h1>
+        <section>
+            <h2>about me</h2>
+            <p>Hello there! I'm Mahavir Patel</p>
+            <!-- <p>
+                Hello there! I'm Mahavir Patel, a professional self-taught developer based in India. With a strong passion for web development and a keen eye for creative solutions, I specialize in transforming ideas into fully functional digital solutions. My goal is
+                to deliver exceptional results that surpass client expectations.
+            </p>
+            <p>
+                Alongside my web development expertise, I also possess a strong flair for Graphic Designing. From captivating Vector Art to eye-catching Banners, Logos, and Planners, I merge technical proficiency with artistic vision to create visually stunning designs.
+                I strive to strike the perfect balance between aesthetics and functionality, ensuring that each project leaves a lasting impression.
+            </p>
+            <p>
+                Feel free to explore my portfolio on my website, where you can witness the diverse range of projects I've had the privilege to work on. Let's collaborate to bring your ideas to life with remarkable digital experiences that truly stand out.
+            </p> -->
+
+        </section>
+        <section>
+            <h2>skills</h2>
+            <p>
+                html, css, javascript, markdown, python, mysql, raspberrypi, arduino
+            </p>
+        </section>
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>contact.</h1>
+        <section>
+            <h2>contact me</h2>
+            <p>
+                <form action="https://formcarry.com/s/lcqUjHkZix" method="POST" class="formcarry-form">
+                    <input name="name" type="text" placeholder="name" required />
+                    <input name="email" type="email" placeholder="email" required /><br>
+                    <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                    <button class="btn_one">send</button>
+                </form>
+            </p>
+        </section>
+    </div>
+    <div id="footer">
+        made with 🤍 <a href="https://mahavir0.github.io">mahavir0</a><br>© No Copyrights <a href="https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io">Source template</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="typingeffect.js"></script>
+</body>
+
+</html>
